@@ -1,0 +1,91 @@
+12S24015 - Lucas Pardede
+
+Buatlah sebuah sistem yang mendukung operasional kafetaria IT Del.
+
+kafetaria it del beroperasi di it del lebih tepatnya di samping kantin lama, dimana bisnis utama mereka adalah berjualan, yang di jual  bermacam macam mulai dari atribut perkuliahan makanan minuman, terus tersedia juga layanan fotocpy ngeprint dll
+
+alur program nanti
+inputkan nama
+pilih kategori apakah mau membeli minuman kah makanan kah atau atribut kah atau ngeprint 
+kah fotocopy kah dll
+nah setelah pilih kategori kaamu juga bisa inputkan dari kategori itu apa yang kamu beli misal bakwan tempe atau jus, atau ngeprint 45 lembar, atau fotocopy dll
+terus nanti input harga
+input total uang
+kembalian
+
+contoh input dan outputnya
+
+Masukkan nama pelanggan: Lucas
+Kategori (makanan/minuman/atribut/print/fotocopy) atau ketik '---' untuk selesai: makanan
+Detail yang dibeli (misal: bakwan tempe, jus, ngeprint 45 lembar): Nasi Ayam Geprek
+Total harga untuk item ini (Rp): 15000
+>> Item berhasil ditambahkan!
+
+Kategori (makanan/minuman/atribut/print/fotocopy) atau ketik '---' untuk selesai: minuman
+Detail yang dibeli (misal: bakwan tempe, jus, ngeprint 45 lembar): Es Teh Manis
+Total harga untuk item ini (Rp): 5000
+>> Item berhasil ditambahkan!
+
+Kategori (makanan/minuman/atribut/print/fotocopy) atau ketik '---' untuk selesai: print
+Detail yang dibeli (misal: bakwan tempe, jus, ngeprint 45 lembar): Print Laporan 10 Lembar
+Total harga untuk item ini (Rp): 5000
+>> Item berhasil ditambahkan!
+
+Kategori (makanan/minuman/atribut/print/fotocopy) atau ketik '---' untuk selesai: ---
+
+Total tagihan keseluruhan: Rp25000.0
+Masukkan total uang yang dibayar (Rp): 50000
+
+=========================================
+          STRUK KAFETARIA IT DEL         
+           Samping Kantin Lama           
+=========================================
+Nama Pelanggan : Lucas
+-----------------------------------------
+makanan      : Nasi Ayam Geprek | Rp15000.00
+minuman      : Es Teh Manis    | Rp5000.00
+print        : Print Laporan 10 Lembar | Rp5000.00
+-----------------------------------------
+Total Tagihan  : Rp25000.00
+Uang Dibayar   : Rp50000.00
+Kembalian      : Rp25000.00
+=========================================
+        Terima Kasih, Deltizen!          
+=========================================
+
+kamu bisa menyempurnakan ataupun menambahkan asumsi mu dengan bebas intinya nanti outputnya akan keluar dalam bentuk struk dan di dalam struk itu isinya adalah detail pesanan beserta harga dll, output akan keluar setelah di inputkan "---"
+
+buatlah sebuh program yang memenuhi 5 kriteria berikut: Kejelasan/kekhususan, konstektualisasi, struktur & format, keterbatasan, teknik prompting
+
+struktur program
+src/driver/Driver3.java
+src/model/*
+
+# FAQ
+## 1. Apa saja software yang diperlukan?
+Berikut ini adalah daftar software yang diperlukan pada sesi terstruktur:
+1. Java Development Kit (JDK), minimum versi 11. Anda dapat menggunakan JDK yang disediakan [Oracle](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) atau [OpenJDK](https://jdk.java.net/).
+2. [Eclipse IDE](https://www.eclipse.org/downloads/packages/release/oxygen/3a/eclipse-ide-java-developers). Semua submission dikemas dalam Eclipse Java Project.
+3. [Git](https://git-scm.com/) Version Control.
+4. Git GUI collaboration tool. Anda dapat menggunakan [GitHub Desktop](https://desktop.github.com/), [SourceTree](https://www.sourcetreeapp.com/), atau GUI tool lainnya.
+
+## 2. Layanan apa yang akan digunakan?
+Selama pelaksanaan sesi terstruktur, kita akan menggunakan layanan-layanan berikut:
+1. Email. Sangat disarankan untuk memiliki [GMail account](https://gmail.com/).
+2. [GitHub](https://github.com/). Semua pekerjaan akan dikumpulkan melalui GitHub Classroom (GHC) yang mengharuskan peserta untuk memiliki GitHub account. Gunakan username yang wajar dan representatif.
+
+## 3. Berkas mana saja yang boleh dimodifikasi?
+Pada Eclipse Java Project (EJP), source code akan diletakkan pada direktori ```src```, sementara hasil kompilasi (bytecode) diletakkan pada direktori ```bin```. Anda hanya diperkenankan untuk memodifikasi berkas dalam direktori ```src```. Modifikasi pada berkas lainnya dapat berakibat pada kegagalan proses penilaian.
+
+## 4. Bagaimana penilaian akan dilakukan?
+Penilaian dilakukan dengan memperhatikan aspek-aspek berikut:
+1. Solution correctness. Ketepatan solusi akan dinilai secara otomatis dan objektif oleh GitHub Classroom (GHC). Pendekatan black-box yang memperhatikan kesesuaian keluaran dengan yang semestinya. Dalam memeriksa, skema yang digunakan adalah exact output artinya solusi anda harus memberikan keluaran yang sama persis dengan expectation.
+2. Integrity check. Pekerjaan anda juga akan diperiksa tingkat kemiripannya dengan pekerjaan rekan anda dengan menggunakan [JPlag](http://jplag.ipd.kit.edu/). Integritas anda dalam bekerja dapat diukur dari tingkat kemiripan solusi anda dan rekan-rekan anda. Kemiripan source code yang diharapkan adalah < 80%
+
+## 5. Adakah aturan penulisan kode yang harus diikuti?
+Kode dari solusi harus memenuhi kriteria sebagai berikut:
+1. Solusi ditulis dengan mengikuti [Java Convention](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html).
+2. Semua artefak disusun dan diakses dengan merujuk pada [fully qualified and cannonical name](https://docs.oracle.com/javase/specs/jls/se10/html/jls-6.html).
+
+## 6. Bagaimana cara mengumpulkan?
+Silakan untuk melihat demonstrasi mekanisme pengumpulan tugas https://youtu.be/ZOhgmVjWFyo.

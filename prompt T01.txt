@@ -1,0 +1,19 @@
+12S24015 - Lucas Pardede
+
+Role: Bertindaklah sebagai seorang Senior Software Architect dan Java Developer Expert yang memiliki keahlian dalam merancang sistem informasi manajemen transaksi yang bersih (clean code) dan efisien.Konteks & Tujuan Sistem:Saya ingin membangun sebuah sistem otomatisasi perhitungan biaya pengiriman untuk Del-Express, sebuah unit usaha di bawah KBT (Koperasi Bersama Terpadu) di lingkungan kampus IT Del. Masalah utama yang ingin diselesaikan adalah inefisiensi dan potensi human error dalam perhitungan biaya pengiriman manual, terutama saat menghadapi skema berat paket yang kompleks (hubungan berat antar paket) dan aturan promo musiman. Sistem ini bertujuan untuk mencatat transaksi keuangan secara akurat dan mempercepat layanan di loket pendaftaran.Alur Kerja Sistem:Pengguna (Petugas) menjalankan aplikasi berbasis Console (CLI).Pengguna menginputkan data dalam loop: Kode Kota diikuti oleh Nilai Variabel x (digunakan untuk menentukan berat paket).Loop akan berhenti jika pengguna mengetikkan "END".Untuk setiap input valid, sistem melakukan perhitungan logika berat, biaya dasar, dan pengecekan syarat promo.Sistem menampilkan Struk Pembayaran yang detail untuk setiap transaksi.Spesifikasi Teknis:Bahasa Pemrograman: Java (Versi 11 atau lebih baru).Paradigma: Object-Oriented Programming (OOP).Arsitektur: Gunakan pendekatan modular (misalnya memisahkan logika Service/Controller dengan Model data).Database: Tidak menggunakan database eksternal (cukup menggunakan In-Memory seperti HashMap untuk menyimpan tarif kota).Platform: Aplikasi Konsol Desktop (Standard Input/Output).Logika Bisnis & Data (Berdasarkan Gambar):Tabel Tarif:MDN (Medan): 8000/kg (Dalam Pulau)BLG (Balige): 5000/kg (Dalam Pulau)JKT (Jakarta): 12000/kg (Luar Pulau)SBY (Surabaya): 13000/kg (Luar Pulau)Rumus Berat Paket:Berat Paket Butet ($wB$) = $x + 1$ (dalam kg).Berat Paket Ucok ($wU$) = $3/2 \times wB$ (dalam kg).Total Berat ($W$) = $wB + wU$.Ketentuan Promo Lebaran:Diskon 10%: Jika Total Berat ($W$) > 10 kg.Asuransi Gratis: Jika pengiriman menuju kota "Luar Pulau".Struktur & Format Output:Saya meminta Anda memberikan kode lengkap yang mencakup:City.java (Class Model untuk data kota).ShippingService.java (Logic perhitungan berat, diskon, dan asuransi).Main.java (Handling input Scanner dan output Struk).Format Struk yang diharapkan:=========================================
+          STRUK PEMBAYARAN DEL-EXPRESS
+=========================================
+Kota Tujuan         : [Nama Kota]
+Berat Paket Butet   : [wB] kg
+Berat Paket Ucok    : [wU] kg
+Total Berat         : [W] kg
+-----------------------------------------
+Total Ongkos Kirim  : Rp [Total Setelah Diskon]
+Informasi Promo     : [Contoh: Diskon 10% & Asuransi Gratis / Tanpa Promo]
+=========================================
+Keterbatasan & Standar Kualitas:Validasi Input: Pastikan sistem menangani kasus jika Kode Kota tidak terdaftar (tampilkan pesan error).Clean Code: Gunakan penamaan variabel yang deskriptif (misal: calculateTotalWeight, isOuterIsland), tambahkan komentar pada bagian logika perhitungan yang kompleks, dan pastikan tidak ada hard-coded berlebihan dengan memanfaatkan konstanta.Tipe Data: Gunakan double untuk perhitungan berat dan biaya agar presisi.Tugas Anda:Jelaskan logika pemikiran Anda (Chain of Thought) mengenai bagaimana Anda akan menangani hubungan berat antara paket Butet dan Ucok sebelum menuliskan kode.Tuliskan kode Java yang modular sesuai spesifikasi di atas.Berikan contoh interaksi input/output di konsol sesuai dengan data contoh:Input 1: MDN, 5Input 2: JKT, 3Input 3: BLG, 4Input 4: END
+
+struktur programnya seperti ini
+src/driver/Driver1.java
+src/model/*
+
